@@ -1,1 +1,35 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.menu {
+  background-color: tomato;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  padding: 10px 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.menu ul li a :hover {
+  color: red;
+}
+
+.navbar, .container {
+  margin: 20px;
+  padding: 10px;
+  background-color: #FAD24A;
+  font: 100% normal Helvetica, sans-serif;
+}
+
+.container {
+  border: 2px solid green;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */
