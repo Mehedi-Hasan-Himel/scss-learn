@@ -84,4 +84,11 @@ p {
   line-height: 24px;
   font-weight: 400;
 }
+
+.btn-button {
+  display: inline-block;
+  padding: 10px 30px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
 /*# sourceMappingURL=style.css.map */

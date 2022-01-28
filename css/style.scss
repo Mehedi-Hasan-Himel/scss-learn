@@ -34,7 +34,6 @@
   }
 }
 
-
 $list: left, right, center, justify;
 @each $i in $list {
   .text-#{$i} {
@@ -42,22 +41,26 @@ $list: left, right, center, justify;
   }
 }
 
-
 $map: (h1, 50px, 60px, 900), (h2, 40px, 50px, 800), (h3, 30px, 40px, 700),
   (p, 16px, 24px, 400);
-@each $name, $font-size, $line-height, $font-weight in $map{
-  #{$name}{
+@each $name, $font-size, $line-height, $font-weight in $map {
+  #{$name} {
     font-size: $font-size;
     line-height: $line-height;
     font-weight: $font-weight;
   }
 }
 
+$button: (primary, red), (success, green), (info, blue);
 
-$button:(primary,teal), (success, green),(info,blue)
-@each $name,$color in button {
-  .btn-#{$name}{
-    
+@each $name, $color in button {
+  .btn-#{$name} {
+    background-color: $color;
+    display: inline-block;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    text-decoration: none;
   }
 }
+
 // Each end
