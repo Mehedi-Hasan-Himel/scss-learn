@@ -24,12 +24,64 @@
 .navbar, .container {
   margin: 20px;
   padding: 10px;
-  background-color: #FAD24A;
+  background-color: #fad24a;
   font: 100% normal Helvetica, sans-serif;
 }
 
 .container {
   border: 2px solid green;
   border-radius: 10px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */

@@ -18,7 +18,7 @@
 .navbar {
   margin: 20px;
   padding: 10px;
-  background-color: #FAD24A;
+  background-color: #fad24a;
   font: 100% normal Helvetica, sans-serif;
 }
 .container {
@@ -26,3 +26,38 @@
   border: 2px solid green;
   border-radius: 10px;
 }
+
+// Each start
+@each $i in (uppercase, lowercase, capitalize) {
+  .text-#{$i} {
+    text-transform: $i;
+  }
+}
+
+
+$list: left, right, center, justify;
+@each $i in $list {
+  .text-#{$i} {
+    text-align: $i;
+  }
+}
+
+
+$map: (h1, 50px, 60px, 900), (h2, 40px, 50px, 800), (h3, 30px, 40px, 700),
+  (p, 16px, 24px, 400);
+@each $name, $font-size, $line-height, $font-weight in $map{
+  #{$name}{
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+  }
+}
+
+
+$button:(primary,teal), (success, green),(info,blue)
+@each $name,$color in button {
+  .btn-#{$name}{
+    
+  }
+}
+// Each end
