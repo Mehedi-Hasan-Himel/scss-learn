@@ -1,3 +1,30 @@
+// ##SASS Introduction.
+
+
+// 1. What is SASS ?
+// Ans: Syntactically Awesome Style Sheet. It's an extension of CSS. SASS design by Hampton Catlin and developed by Natalie Weizenaum in 2006. 
+
+// 2. What are prerequisites to learn SASS ?
+// i. HTML, 
+// ii. CSS, 
+// iii. JavaScript. 
+
+// 3. Why SASS ?
+//3.1 SASS has some extra special features hat do not exist in CSS. 
+// i. Variables, 
+// ii. nested rules, 
+// iii. mixin, imports,
+// iv. inheritance. 
+
+
+// 3.2 To make our code simpler and more maintainable.
+
+// 3.3 No dry (we can @extend css rules.)
+
+// 4.  SASS comments.
+// Standard css  /* comments */ 
+// Inline comments // comment.
+
 .menu {
   background-color: tomato;
   ul {
