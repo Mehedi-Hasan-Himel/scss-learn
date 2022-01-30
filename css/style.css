@@ -1,23 +1,23 @@
-.menu {
+#menu-2 {
   background-color: tomato;
 }
 
-.menu ul {
+#menu-2 ul {
   list-style: none;
 }
 
-.menu ul li {
+#menu-2 ul li {
   padding: 10px 20px;
 }
 
-.menu ul li a {
+#menu-2 ul li a {
   text-decoration: none;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.menu ul li a :hover {
+#menu-2 ul li a :hover {
   color: red;
 }
 
@@ -31,64 +31,5 @@
 .container {
   border: 2px solid green;
   border-radius: 10px;
-}
-
-.text-uppercase {
-  text-transform: uppercase;
-}
-
-.text-lowercase {
-  text-transform: lowercase;
-}
-
-.text-capitalize {
-  text-transform: capitalize;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-justify {
-  text-align: justify;
-}
-
-h1 {
-  font-size: 50px;
-  line-height: 60px;
-  font-weight: 900;
-}
-
-h2 {
-  font-size: 40px;
-  line-height: 50px;
-  font-weight: 800;
-}
-
-h3 {
-  font-size: 30px;
-  line-height: 40px;
-  font-weight: 700;
-}
-
-p {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-}
-
-.btn-button {
-  display: inline-block;
-  padding: 10px 30px;
-  text-transform: capitalize;
-  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
