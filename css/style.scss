@@ -30,13 +30,56 @@
 
 // ## Variables:
 
-// color variable declarations.
+// Browser Reset Code Start.
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// Browser Reset Code End.
+
+// color variable declarations start.
   $header__bg-color:#ffab73;
   $main__bg-color:#ffd384;
   $footer__bg-color:#ffaec0;
 
+// color variable declarations end.
 
+header{
+  background-color: $header__bg-color ;
+}
 
+// nav style
+nav{
+  margin-top: 15px;
+  ul{
+    list-style-type: none;
+    li{
+      display: inline-block;
+      margin: 0 15px;
+      a{
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        transition: 0.4s;
+        
+      }
+     :hover{
+       background: black;
+       border-radius: 5px;
+     }
+    }
+  }
+}
+
+main{
+  background: $main__bg-color;
+}
+
+footer{
+  background: $footer__bg-color ;
+}
 // ##--Anisul Islam End--##
 
 
