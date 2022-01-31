@@ -90,10 +90,21 @@ footer {
 }
 // mixin & include end
 
+@mixin setFontSize($value) {
+  @if $value == small {
+    font-size: 12px;
+  }
+  @else if $value == medium {
+    font-size: 16px;
+  }
+  @else if $value == large {
+    font-size: 20px;
+  }
+  @else {
+    font-size: none;
+  }
+}
 
-// extend & inheritance start
-
-// extend & inheritance end
 
 // ##--Anisul Islam End--##
 
