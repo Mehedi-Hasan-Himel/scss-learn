@@ -9,6 +9,13 @@ header {
   background-color: #ffab73;
 }
 
+.btn, .btn-download, .learn-more {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+}
+
 nav {
   margin-top: 15px;
 }

@@ -31,7 +31,18 @@
 header {
   background-color: $header__bg-color;
 }
-
+.btn{
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+}
+.btn-download{
+  @extend .btn;
+}
+.learn-more{
+  @extend .btn;
+}
 // nav style
 nav {
   margin-top: 15px;
@@ -78,6 +89,11 @@ footer {
   margin: 10px 0;
 }
 // mixin & include end
+
+
+// extend & inheritance start
+
+// extend & inheritance end
 
 // ##--Anisul Islam End--##
 
