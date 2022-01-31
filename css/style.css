@@ -44,38 +44,15 @@ footer {
   background: #ffaec0;
 }
 
-#menu-2 {
-  background-color: tomato;
+#about p {
+  font-size: 18px;
+  text-align: left;
+  margin: 10px 0;
 }
 
-#menu-2 ul {
-  list-style: none;
-}
-
-#menu-2 ul li {
-  padding: 10px 20px;
-}
-
-#menu-2 ul li a {
-  text-decoration: none;
-  display: block;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-#menu-2 ul li a :hover {
-  color: red;
-}
-
-.navbar, .container {
-  margin: 20px;
-  padding: 10px;
-  background-color: #fad24a;
-  font: 100% normal Helvetica, sans-serif;
-}
-
-.container {
-  border: 2px solid green;
-  border-radius: 10px;
+#education p {
+  font-size: 16px;
+  text-align: justify;
+  margin: 10px 0;
 }
 /*# sourceMappingURL=style.css.map */

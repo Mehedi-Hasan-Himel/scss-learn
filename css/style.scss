@@ -3,115 +3,113 @@
 // ##SASS Introduction.
 
 // 1. What is SASS ?
-// Ans: Syntactically Awesome Style Sheet. It's an extension of CSS. SASS design by Hampton Catlin and developed by Natalie Weizenaum in 2006. 
+// Ans: Syntactically Awesome Style Sheet. It's an extension of CSS. SASS design by Hampton Catlin and developed by Natalie Weizenaum in 2006.
 
 // 2. What are prerequisites to learn SASS ?
-// i. HTML, 
-// ii. CSS, 
-// iii. JavaScript. 
+// i. HTML,
+// ii. CSS,
+// iii. JavaScript.
 
 // 3. Why SASS ?
-//3.1 SASS has some extra special features hat do not exist in CSS. 
-// i. Variables, 
-// ii. nested rules, 
+//3.1 SASS has some extra special features hat do not exist in CSS.
+// i. Variables,
+// ii. nested rules,
 // iii. mixin, imports,
-// iv. inheritance. 
-
+// iv. inheritance.
 
 // 3.2 To make our code simpler and more maintainable.
 
 // 3.3 No dry (we can @extend css rules.)
 
 // 4.  SASS comments.
-// Standard css  /* comments */ 
+// Standard css  /* comments */
 // Inline comments // comment.
 
+@import "reset";
+@import "variable";
 
-
-// ## Variables:
-
-// Browser Reset Code Start.
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-// Browser Reset Code End.
-
-// color variable declarations start.
-  $header__bg-color:#ffab73;
-  $main__bg-color:#ffd384;
-  $footer__bg-color:#ffaec0;
-
-// color variable declarations end.
-
-header{
-  background-color: $header__bg-color ;
+header {
+  background-color: $header__bg-color;
 }
 
 // nav style
-nav{
+nav {
   margin-top: 15px;
-  ul{
+  ul {
     list-style-type: none;
-    li{
+    li {
       display: inline-block;
       margin: 0 15px;
-      a{
+      a {
         display: inline-block;
         color: white;
         text-decoration: none;
         padding: 10px;
         transition: 0.4s;
-        
       }
-     :hover{
-       background: black;
-       border-radius: 5px;
-     }
+      :hover {
+        background: black;
+        border-radius: 5px;
+      }
     }
   }
 }
 
-main{
+main {
   background: $main__bg-color;
 }
 
-footer{
-  background: $footer__bg-color ;
+footer {
+  background: $footer__bg-color;
 }
+
+// mixin & include start
+
+@mixin para-style($size,$style) {
+  font-size: $size;
+  text-align: $style;
+}
+#about p {
+  @include para-style(18px, left);
+  margin: 10px 0;
+}
+#education p {
+  @include para-style(16px, justify);
+  margin: 10px 0;
+}
+// mixin & include end
+
 // ##--Anisul Islam End--##
 
-
 // ##--Nahian Start--##
-#menu-2 {
-  background-color: tomato;
-  ul {
-    list-style: none;
-    li {
-      padding: 10px 20px;
-      a {
-        text-decoration: none;
-        display: block;
-        transition: 0.3s;
-        :hover {
-          color: red;
-        }
-      }
-    }
-  }
-}
-.navbar {
-  margin: 20px;
-  padding: 10px;
-  background-color: #fad24a;
-  font: 100% normal Helvetica, sans-serif;
-}
-.container {
-  @extend .navbar;
-  border: 2px solid green;
-  border-radius: 10px;
-}
+// #menu-2 {
+//   background-color: tomato;
+//   ul {
+//     list-style: none;
+//     li {
+//       padding: 10px 20px;
+//       a {
+//         text-decoration: none;
+//         display: block;
+//         transition: 0.3s;
+//         :hover {
+//           color: red;
+//         }
+//       }
+//     }
+//   }
+// }
+// .navbar {
+//   margin: 20px;
+//   padding: 10px;
+//   background-color: #fad24a;
+//   font: 100% normal Helvetica, sans-serif;
+// }
+// .container {
+//   @extend .navbar;
+//   border: 2px solid green;
+//   border-radius: 10px;
+// }
 
 // Each start
 // @each $i in (uppercase, lowercase, capitalize) {
