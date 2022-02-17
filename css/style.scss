@@ -31,29 +31,26 @@
 header {
   background-color: $header__bg-color;
 }
-.btn{
+.btn {
   border: none;
   padding: 15px 30px;
   text-align: center;
   font-size: 16px;
 }
-.btn-download{
+.btn-download {
   @extend .btn;
 }
-.learn-more{
+.learn-more {
   @extend .btn;
 }
 @mixin setFontSize($value) {
   @if $value == small {
     font-size: 12px;
-  }
-  @else if $value == medium {
+  } @else if $value == medium {
     font-size: 16px;
-  }
-  @else if $value == large {
+  } @else if $value == large {
     font-size: 20px;
-  }
-  @else {
+  } @else {
     font-size: none;
   }
 }
@@ -71,7 +68,7 @@ nav {
         text-decoration: none;
         padding: 10px;
         transition: 0.4s;
-        @include setFontSize(medium)
+        @include setFontSize(medium);
       }
       :hover {
         background: black;
@@ -91,7 +88,7 @@ footer {
 
 // mixin & include start
 
-@mixin para-style($size,$style) {
+@mixin para-style($size, $style) {
   font-size: $size;
   text-align: $style;
 }
@@ -104,9 +101,6 @@ footer {
   margin: 10px 0;
 }
 // mixin & include end
-
-
-
 
 // ##--Anisul Islam End--##
 
@@ -179,3 +173,33 @@ $button: (primary, red), (success, green), (info, blue);
 // Each end
 
 // ##--Nahian End--##
+
+/*
+  Flex-Box Start
+*/
+.flex-main {
+  @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+  font-family: "Poppins", sans-serif;
+  width: 1000px;
+  margin: 100px auto;
+  border: 2px solid #ddd;
+  padding: 20px;
+  &__box {
+    display: flex;
+    flex-flow: row-reverse wrap-reverse;
+    &-single {
+      background-color: #ff7720;
+      padding: 20px;
+      margin: 20px;
+      width: 278px;
+      h2 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+/*
+  Flex-Box End
+*/

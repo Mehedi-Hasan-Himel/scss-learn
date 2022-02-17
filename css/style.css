@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -157,4 +158,42 @@ p {
   text-transform: capitalize;
   text-decoration: none;
 }
+
+/*
+  Flex-Box Start
+*/
+.flex-main {
+  font-family: "Poppins", sans-serif;
+  width: 1000px;
+  margin: 100px auto;
+  border: 2px solid #ddd;
+  padding: 20px;
+}
+
+.flex-main__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse wrap-reverse;
+          flex-flow: row-reverse wrap-reverse;
+}
+
+.flex-main__box-single {
+  background-color: #ff7720;
+  padding: 20px;
+  margin: 20px;
+  width: 278px;
+}
+
+.flex-main__box-single h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+/*
+  Flex-Box End
+*/
 /*# sourceMappingURL=style.css.map */
