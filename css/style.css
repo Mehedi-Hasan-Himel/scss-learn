@@ -196,4 +196,38 @@ p {
 /*
   Flex-Box End
 */
+/*
+  Grid Start
+*/
+.grid__container {
+  width: 1000px;
+  margin: 100px auto;
+  border: 5px solid #54b5e9;
+  padding: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2%;
+}
+
+.grid__container__box {
+  background-color: #54b5e9;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.grid__container__box h4 {
+  font-size: 25px;
+}
+
+.grid__container .item-1 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/*
+  Grid End
+*/
 /*# sourceMappingURL=style.css.map */
